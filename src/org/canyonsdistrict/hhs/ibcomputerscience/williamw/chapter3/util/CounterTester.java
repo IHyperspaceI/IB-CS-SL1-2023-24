@@ -1,4 +1,4 @@
-package org.canyonsdistrict.hhs.ibcomputerscience.chapter3.util;
+package org.canyonsdistrict.hhs.ibcomputerscience.williamw.chapter3.util;
 
 public class CounterTester {
     public static void main(String[] args) {

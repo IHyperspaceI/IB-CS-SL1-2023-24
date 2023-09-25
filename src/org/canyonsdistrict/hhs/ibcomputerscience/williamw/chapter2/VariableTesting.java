@@ -1,4 +1,4 @@
-package org.canyonsdistrict.hhs.ibcomputerscience.chapter2;
+package org.canyonsdistrict.hhs.ibcomputerscience.williamw.chapter2;
 
 public class VariableTesting {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package org.canyonsdistrict.hhs.ibcomputerscience.chapter1;
+package org.canyonsdistrict.hhs.ibcomputerscience.williamw.chapter1;
 
 public class FunTester {
     private static int years = 8;

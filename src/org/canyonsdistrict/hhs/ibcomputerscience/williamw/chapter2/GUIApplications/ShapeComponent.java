@@ -1,4 +1,4 @@
-package org.canyonsdistrict.hhs.ibcomputerscience.chapter2.GUIApplications;
+package org.canyonsdistrict.hhs.ibcomputerscience.williamw.chapter2.GUIApplications;
 
 import javax.swing.*;
 import java.awt.*;

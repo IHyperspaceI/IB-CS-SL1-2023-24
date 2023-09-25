@@ -1,4 +1,4 @@
-package org.canyonsdistrict.hhs.ibcomputerscience.chapter2;
+package org.canyonsdistrict.hhs.ibcomputerscience.williamw.chapter2;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
