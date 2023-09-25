@@ -1,12 +1,13 @@
 package org.canyonsdistrict.hhs.ibcomputerscience.chapter3.bank;
 public class BankAccount {
     private double balance;
+    private String name;
     public BankAccount(double initialBalance){
         this.balance = initialBalance;
     }
 
     public BankAccount(){
-        this.balance = 5;
+        this(5); // Calls the other constructor that takes this arg
     }
     public double getBalance(){
         return balance;
