@@ -1,17 +1,20 @@
 package org.canyonsdistrict.hhs.ibcomputerscience.williamw.chapter3.bank;
+
+import java.util.Scanner;
+
 public class BankAccountTester {
     public static void main(String[] args) {
         var checking = new BankAccount(69, "Laugh at this user's checking!");
         var savings = new BankAccount("Laugh at this user's savings!");
+        var scanner = new Scanner(System.in);
 
-        System.out.println("Name before: " + savings.getName());
-        savings.setName("The new line account\n");
-        System.out.println("Name after: " + savings.getName());
+        System.out.println("Enter new account name:");
+        var name = scanner.nextLine();
 
+        System.out.println("Enter new account initial balance:");
+        var newBalance = scanner.nextDouble();
 
-        savings.deposit(5_000);
-
-        System.out.println(checking.getName() + ": " + checking.getBalance());
-        System.out.println(savings.getName() + ": " + savings.getBalance());
+        var userAccount = new BankAccount(newBalance, name);
+        System.out.printf("New account created with name '%s' and a balance of $%.2f%n", name, newBalance);
     }
 }

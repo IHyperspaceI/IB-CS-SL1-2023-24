@@ -72,4 +72,15 @@ public class BankAccount {
     public void setName(String newName){
         this.name = newName;
     }
+
+    /**
+     * withdraws an amount out of the account with a 10% fee
+     * @param withdrawAmount the amount to withdraw
+     */
+    public void withdrawFromATM(double withdrawAmount){
+        double feePercent = 0.1;
+        double feeAmount = withdrawAmount * feePercent;
+
+        balance = balance - (withdrawAmount + feeAmount);
+    }
 }

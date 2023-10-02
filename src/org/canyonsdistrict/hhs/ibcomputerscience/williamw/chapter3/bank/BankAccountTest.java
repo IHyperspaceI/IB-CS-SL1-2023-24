@@ -18,4 +18,33 @@ public class BankAccountTest {
     Assertions.assertEquals(100, testAccount.getBalance());
     Assertions.assertEquals("Testing Account", testAccount.getName());
     }
+
+    @Test
+    public void testDeposit(){
+        var testAccount = new BankAccount();
+        testAccount.deposit(5);
+        Assertions.assertEquals(10, testAccount.getBalance());
+    }
+
+    @Test
+    public void testWithdraw(){
+        var testAccount = new BankAccount();
+        testAccount.withdraw(5);
+        Assertions.assertEquals(0, testAccount.getBalance());
+    }
+
+
+    @Test
+    public void testWithdrawFromATM(){
+        var testAccount = new BankAccount(10, "10");
+        testAccount.withdrawFromATM(10);
+        Assertions.assertEquals(-1.0, testAccount.getBalance());
+    }
+
+    @Test
+    public void testNameChange(){
+        var testAccount = new BankAccount("hi");
+        testAccount.setName("lol");
+        Assertions.assertEquals("lol", testAccount.getName());
+    }
 }
