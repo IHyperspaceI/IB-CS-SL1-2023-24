@@ -12,26 +12,23 @@ public class LinkedListApp {
         names.add("Erika");
         names.add("Will");
         names.addFirst("Marla");
-        //names.removeFirst();
-        //names.removeLast();
+        names.removeFirst();
+        names.removeLast();
         names.add("Matus");
-        names.add("Kushal");
+        names.addFirst("Kushal");
 
         ListIterator<String> iterator = names.listIterator();
-        while (iterator.hasNext()) {
+        while (iterator.hasNext()){
             var name = iterator.next();
-
-            if (name.equals("Om")) {
-                iterator.remove();
-                iterator.next();
+            if (name.equals("Om")){
                 iterator.remove();
             }
-            if (name.equals("Erika")) {
+            if (name.equals("Erika")){
                 iterator.add("Peter");
             }
         }
 
-        for (var name : names) {
+        for (var name : names){
             System.out.println(name);
         }
     }
